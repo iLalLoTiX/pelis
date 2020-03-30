@@ -9,10 +9,10 @@ import { PeliculasService } from '../../services/peliculas.service';
 })
 export class HomeComponent implements OnInit {
 
-  private peliculasPop: any[] = [];
-  private peliculas2010: any[] = [];
+  public peliculasPop: any[] = [];
+  public peliculas2010: any[] = [];
 
-  constructor(private _ps: PeliculasService)
+  constructor(public _ps: PeliculasService)
   {
     
     this._ps.getPopulares().subscribe((peliculas: any[]) => 

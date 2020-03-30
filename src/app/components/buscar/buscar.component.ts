@@ -16,7 +16,7 @@ import { NgxMasonryOptions } from 'ngx-masonry';
 export class BuscarComponent implements OnInit {
 
   constructor(private text: ActivatedRoute,
-              private _ps: PeliculasService) { 
+            public _ps: PeliculasService) { 
   const A = this.text.snapshot.paramMap.get('texto');
   this._ps.buscarPelicula(A).subscribe();
   }
