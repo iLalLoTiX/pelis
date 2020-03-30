@@ -1,0 +1,12 @@
+<h1>Cartelera actual</h1>
+
+
+<app-loop [peliculas] = "peliculasPop"></app-loop>
+<hr>
+<h1>Populares en el 2010</h1>
+<app-loop [peliculas] = "peliculas2010"></app-loop>
+<hr>
+<h1>Niños populares</h1>
+<div *ngFor="let pelicula of _ps.peliculas2010">
+    <li>{{pelicula.title}}</li>
+</div>

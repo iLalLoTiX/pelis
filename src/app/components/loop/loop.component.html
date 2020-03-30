@@ -1,0 +1,11 @@
+
+<ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true" class="col">
+    
+    <div ngxMasonryItem *ngFor="let pelicula of peliculas" >
+    
+    <img src="http://image.tmdb.org/t/p/w300{{pelicula.backdrop_path}}">
+    <button class="btn btn btn-outline-primary" [routerLink]="['/info', pelicula.id ]" >Ver mas</button>
+    </div>
+
+    
+</ngx-masonry>
