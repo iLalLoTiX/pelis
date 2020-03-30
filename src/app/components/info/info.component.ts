@@ -12,7 +12,6 @@ export class InfoComponent implements OnInit {
   constructor(private id: ActivatedRoute,
               private _ps: PeliculasService) { 
     const A = this.id.snapshot.paramMap.get('id');
-    this._ps.getInfo(A).subscribe();
   }
 
   ngOnInit() {
